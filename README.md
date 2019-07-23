@@ -18,10 +18,10 @@ Check the input cubes including velocities and density arrays. Return dimension 
 Link to pre-determined seismic machines specifications. If core.NPROX, core.NPROY, and core.NPROZ are not defined, the function will parallelize the computaion using the maximum available number of cores in a specified machine number. Here, we set the core numbers with respect to the UT Geophysics lab. Users can delete this function and enter the core numbers manually.Note that core.NPROX must be divisible by cube.Nx. 
 
 3. create_source()
-Write a source file. Sources are placed on a rectangular grid on the top of the sample+padding. 
+Write a source file. Sources are placed on a rectangular grid at the top of the sample+padding. 
 
 4. create_receiver()
-Write a receiver file.
+Write a receiver file. Receivers are placed on a rectangular grid at the bottom of the sample+padding. Here, we use six receivers. 
 
 5. create_cube()
 Write input files for SOFI3D. 
